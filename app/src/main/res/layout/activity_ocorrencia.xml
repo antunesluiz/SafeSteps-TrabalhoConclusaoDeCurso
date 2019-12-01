@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5EE"
+    tools:context=".activities.OcorrenciaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Ocorrencias"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/galdeano"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:text="Cadastro de Ocorrências"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/endereco_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira o endereço aqui!"
+            android:inputType="text"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Ocorrência"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ocorrencia"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ausência de iluminação"
+                    android:textSize="16dp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rua pouco movimentada"
+                    android:textSize="16dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assédio costumeiro"
+                    android:textSize="16dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Área de risco"
+                    android:textSize="16dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Data da Ocorrência"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:drawableLeft="@drawable/iconscalendario"
+                    android:id="@+id/dataOcorrencia"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:inputType="date"
+                    android:text="@string/dd_mm_aaaa"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:focusable="false"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Horário da Ocorrência"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:drawableLeft="@drawable/iconsrelogio"
+                    android:id="@+id/timeOcorrencia"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:focusable="false"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar Ocorrência"
+            android:background="@drawable/btn_ocorrencia"
+            android:layout_marginTop="20dp"
+            android:onClick="submit"/>
+    </LinearLayout>
+</ScrollView>

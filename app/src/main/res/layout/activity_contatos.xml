@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ContatosActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meus contatos"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:id="@+id/titulo"/>
+
+    <ListView
+        android:id="@+id/lista_contatos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titulo"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:id="@+id/button_addContato"
+        android:background="@drawable/bg_semiround"
+
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignEnd="@+id/lista_contatos"
+        android:layout_alignBottom="@+id/lista_contatos"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:drawableTop="@drawable/ic_adicionar"
+        android:gravity="center"
+        android:paddingTop="15dp"/>
+
+</RelativeLayout>

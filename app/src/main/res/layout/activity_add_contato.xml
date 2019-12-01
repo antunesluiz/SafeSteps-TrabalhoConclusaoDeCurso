@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddContatoActivity"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Contatos"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:id="@+id/titulo"
+        android:onClick="onClickEditText"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="22dp"/>
+    <EditText
+        android:id="@+id/nome_add_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira o nome aqui" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="Telefone"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/numero_add_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira o número de telefone aqui" />
+
+    <Button
+        android:id="@+id/button_addContato_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_marginTop="18dp"/>
+
+
+
+
+</LinearLayout>

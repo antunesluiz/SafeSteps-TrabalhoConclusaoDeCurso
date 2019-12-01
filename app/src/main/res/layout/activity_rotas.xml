@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RotasActivity"
+    android:background="@color/colorPrimary">
+
+    <EditText
+        android:id="@+id/edit_origem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round"
+        android:padding="8dp"
+        android:drawableStart="@drawable/ic_search"
+        android:hint=" Sua localização"
+        android:textColorHint="@color/quantum_white_100"
+        android:textColor="@color/quantum_white_100"
+        android:focusable="false"
+            android:elevation="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+    <EditText
+        android:id="@+id/edit_destino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_origem"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_round"
+        android:drawableStart="@drawable/ic_search"
+        android:elevation="5dp"
+        android:focusable="false"
+        android:hint=" Escolha o destino"
+        android:padding="8dp"
+        android:textColor="@color/quantum_white_100"
+        android:textColorHint="@color/quantum_white_100" />
+    <fragment
+        android:id="@+id/map_rota"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp" />
+
+</RelativeLayout>
